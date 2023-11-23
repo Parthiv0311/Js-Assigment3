@@ -35,13 +35,14 @@ class Pizza {
         this.instructions = instructions;
     }
 
-    displayOrderDetails() {
-        const orderDetails = `Pizza Type: ${this.type}
-Toppings: ${this.toppings}
-Extra Cheese: ${this.extraCheese ? 'Yes' : 'No'}
-Quantity: ${this.quantity}
+   displayOrderDetails() {
+        const orderDetails = `Pizza Type: ${this.type}<br>
+Toppings: ${this.toppings}<br>
+Extra Cheese: ${this.extraCheese ? 'Yes' : 'No'}<br>
+Quantity: ${this.quantity}<br>
 Special Instructions: ${this.instructions}`;
 
-        alert(orderDetails);
+        // Update the HTML of the orderDetails div
+        document.getElementById('orderDetails').innerHTML = `<h2>Your Order Details:</h2>${orderDetails}`;
     }
 }
