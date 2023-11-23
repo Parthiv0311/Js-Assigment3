@@ -35,7 +35,7 @@ class Pizza {
         this.instructions = instructions;
     }
 
-   displayOrderDetails() {
+    displayOrderDetails() {
         const orderDetails = `Pizza Type: ${this.type}<br>
 Toppings: ${this.toppings}<br>
 Extra Cheese: ${this.extraCheese ? 'Yes' : 'No'}<br>
