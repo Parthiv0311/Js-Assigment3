@@ -1,0 +1,139 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Creating a background with a linear gradient and an image. */
+    background: linear-gradient(rgba(52, 152, 219, 0.6), rgba(106, 82, 117, 0.6)),
+        url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148707022.jpg?w=1380&t=st=1686280066~exp=1686280666~hmac=d888fe99f7c49f05cf3120fd722b19084887dcdc891156c31abb42ae91b4e39a') no-repeat center center fixed;
+    background-size: cover;
+    /* Setting the text color for the body. */
+    color: #555;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    /* Applying an animation to create a gradient effect on the background. */
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+
+    /* Defining keyframes for the gradient animation. */
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    /* Styling the container for the form. */
+    background-color: rgba(197, 233, 182, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin: 0 auto;
+    /* Applying an animation to slide in the container. */
+    animation: slideInUp 1s ease-in-out;
+}
+
+.heading {
+    /* Styling for the form heading. */
+    text-align: center;
+    color: #f38908;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 24px;
+    /* Applying an animation to fade in the heading. */
+    animation: fadeIn 2s;
+}
+
+.form-group {
+    /* Adding margin at the bottom of each form group. */
+    margin-bottom: 15px;
+}
+
+label {
+    /* Styling for form labels. */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="number"],
+input[type="tel"],
+textarea {
+    /* Styling for text inputs, select, and textarea. */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ea6e6e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    /* Styling for checkboxes. */
+    border: 1px solid #ea6e6e;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    /* Styling for submit button. */
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid #f1f10b;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s, border 0.5s;
+}
+
+input[type="submit"]:hover {
+    /* Styling when hovering over the submit button. */
+    background-color: #2980b9;
+    border: 1px solid #f1f10b;
+}
+
+@keyframes slideInUp {
+
+    /* Defining keyframes for the slide in animation. */
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+
+    /* Defining keyframes for the fade in animation. */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
